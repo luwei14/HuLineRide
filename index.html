@@ -134,7 +134,7 @@
             lineCap: 'round'
           }
       }).on('loaded', function(e) {
-        console.log(e);
+        //console.log(e);
         total_distance += gpxobj.get_distance()/1000;
         document.getElementsByClassName("distance")[0].textContent=total_distance.toFixed(2);
         total_elevation_gain += gpxobj.get_elevation_gain();
@@ -147,10 +147,10 @@
         total_time += gpxobj.get_total_time() / 1000./3600;
         document.getElementsByClassName("duration")[0].textContent=total_time.toFixed(2);
 
-        console.log(gpxobj.get_name(),gpxobj.get_total_time()/1000./3600);
+        //console.log(gpxobj.get_name(),gpxobj.get_total_time()/1000./3600);
       }).on('click', function(e) { 
         //alert("click"); 
-        console.log(e); 
+        //console.log(e); 
       }).addTo(map);
 
       
